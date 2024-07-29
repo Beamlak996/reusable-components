@@ -10,6 +10,7 @@ import { RootLayout } from "./layout/root-layout";
 function App() {
 
   return (
+
     <BrowserRouter>
       <RootLayout>
         <Routes>

@@ -13,7 +13,7 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { RiBuilding3Line } from "react-icons/ri";
 import { useMediaQuery } from "react-responsive";
 import { MdMenu } from "react-icons/md";
-import { NavLink, useLocation, useRoutes } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export const Sidebar = () => {
   let isTabletMid = useMediaQuery({ query: "(max-width: 768px)" });
@@ -83,7 +83,7 @@ export const Sidebar = () => {
     <div>
       <div
         onClick={() => setOpen(false)}
-        className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${
+        className={`md:hidden fixed inset-0 max-h-screen  bg-black/50 ${
           open ? "block" : "hidden"
         } `}
       ></div>
@@ -92,7 +92,7 @@ export const Sidebar = () => {
         variants={Nav_animation}
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
-        className=" bg-white text-gray shadow-xl z-[999] max-w-[16rem]  w-[16rem] 
+        className=" bg-white text-gray shadow-xl max-w-[16rem]  w-[16rem] 
             overflow-hidden md:relative fixed
          h-screen "
       >
