@@ -1,11 +1,12 @@
-import { Button } from "./components/ui/button"
+import { Sidebar1 } from "./components/reusable/sidebar-1"
 
 
 function App() {
 
   return (
-    <div>
-      <Button>Click Me</Button>
+    <div className="flex" >
+      <Sidebar1 />
+      <div>Home Page</div>
     </div>
   )
 }
