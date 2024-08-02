@@ -9,6 +9,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 
 const TestForm = z.object({
   name: z.string().min(1, {
@@ -39,7 +40,7 @@ export const Stroage = () => {
               <FormItem>
                 <FormLabel>Name</FormLabel>
                 <FormControl>
-                  <input {...field} placeholder="name" />
+                  <Input {...field} placeholder="name" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
